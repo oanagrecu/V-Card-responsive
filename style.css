@@ -1,0 +1,140 @@
+:root {
+  --primary-color: #de9ca7;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+}
+/* styling the blue section */
+.sectionBlue {
+  background-color: var(--primary-color);
+  height: 100vh;
+  width: 25vw;
+  padding: 30px;
+  box-sizing: border-box;
+  color: white;
+}
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 100px;
+  width: fit-content;
+}
+.social a {
+  text-decoration: none;
+  color: white;
+}
+.social i {
+  margin-right: 20px;
+}
+
+/* styling the section with the picture */
+
+.picture {
+  height: 100vh;
+  width: 30vw;
+}
+
+.picture img {
+  height: 80%;
+}
+
+.blueSide {
+  height: 10%;
+  width: 40%;
+  background-color: var(--primary-color);
+}
+
+/* styling the white section */
+
+.whiteBlock {
+  width: 45vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10vh;
+  box-sizing: border-box;
+}
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu i {
+  font-size: 50px;
+  color: #de9ca7;
+}
+
+.description span {
+  color: var(--primary-color);
+}
+
+.b1 {
+  color: white;
+  background-color: var(--primary-color);
+  padding: 15px 25px;
+  border-radius: 55px;
+  border: none;
+  margin-right: 20px;
+}
+
+.b2 {
+  color: black;
+  padding: 15px 30px;
+  background-color: white;
+  border-radius: 55px;
+  border: 2px solid black;
+}
+@media (max-width: 768px) {
+  /* Styles for smaller screens */
+  .container {
+    flex-direction: column;
+  }
+
+  .sectionBlue {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .flexColumn {
+    justify-content: center;
+  }
+
+  .picture {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .blueSide {
+    display: none;
+  }
+
+  .whiteBlock {
+    width: 100%;
+    padding: 5vh;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .b1,
+  .b2 {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
